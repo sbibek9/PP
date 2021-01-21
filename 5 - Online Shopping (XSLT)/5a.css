@@ -1,0 +1,35 @@
+b {
+    display: block;
+    color: blue;
+    font-style: bold;
+}
+e {
+    display: block;
+    color: green;
+    font-style: bold;
+}
+
+s {
+    display: block;
+    color: red;
+    font-style: bold;
+}
+
+c {
+    display: block;
+    color: blue;
+    font-style: bold;
+}
+
+o {
+    display: block;
+    color: black;
+    font-style: bold;
+}
+RU {
+    background-color: #33cc92;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    border: 5px solid #000000;
+}

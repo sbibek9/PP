@@ -1,0 +1,4 @@
+####Setting up Mysql ######
+- run "sudo apt install mysql-server"
+- after installing run "mysql_secure_installation"
+- setup password

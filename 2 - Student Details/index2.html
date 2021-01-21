@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Student Registration Portal</title>
+    </head>
+    <body>
+        <center><h1>Student Registration Portal</h1></center>
+        <form id="abc">
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" /><br />
+            <label for="birth">Enter DOB:</label>
+            <input type="date" id="birth"/><br/>
+            <label for="branch">Enter branch:</label>
+            <input type="text" id="branch" /><br />
+            <label for="semester">Enter semester:</label>
+            <input type="text" id="semester" max="8" min="0" /><br />
+            <label for="join">Enter DOJ:</label>
+            <input type="date" id="join" /><br />
+            <label for="uname">Enter University Name:</label>
+            <input type="text" id="uname" /><br />
+            <label for="mobile">Enter Mobile No:</label>
+            <input type="text" id="mobile" /><br />
+            <label for="email">Enter email:</label>
+            <input type="text" id="email" /><br />
+        </form>
+        <button onclick="validate()">Submit</button>
+        <p>
+            Result: <span id="result_add"></span>
+        </p>
+    </body>
+    <script>
+        function validate() {
+            var result_text = document.getElementById("result_add");
+            var dob = document.getElementById("birth").value;
+            var birthday = parseInt(dob.substring(0,4));
+            var doj = document.getElementById("join").value;
+            var joining = parseInt(doj.substring(0,4));
+            if (joining-birthday < 17) {
+                result_text.innerHTML = "Too young to join college";
+                return;
+            }
+            var branch_js = document.getElementById("branch").value;
+            if (branch_js.search(/(CSE|EEE|EC|BCA)/i) == -1) {
+                result_text.innerHTML = "Invalid Branch";
+                return;
+            }
+            var mobile = document.getElementById("mobile").value;
+            if (!mobile.search(/^[/d]{9}$/)) {
+                result_text.innerHTML = "Invalid mobile";
+                return;
+            }
+            var email = document.getElementById("email").value;
+            if (email.search(/^[\w\d]+@[\w\d]+\.[\w]{2,3}$/) == -1) {
+                result_text.innerHTML = "Invalid email";
+                return;
+            }
+            alert("Data successfully transmitted");
+            result_text.innerHTML = "Success";
+        }
+    </script>
+</html>

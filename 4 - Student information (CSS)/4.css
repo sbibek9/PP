@@ -1,0 +1,59 @@
+CATALOG
+{
+ background-image: url(image.jpg);
+ background-size: cover;
+ background-color: #33cc92;
+ text-align: center;
+ width: 100%;
+}
+STUDENT
+{
+ display: block;
+ margin-bottom: 30pt;
+ margin-left: 20px;
+ margin-top: 10px;
+}
+NAME
+{
+ color: #000000;
+ font-size: 20pt;
+}
+SRN
+{
+ color: #000000;
+ font-size: 20pt;
+}
+BRANCH
+{
+ display: block;
+ color: #000000;
+ margin-left: 20pt;
+ font-size: 20px;
+ font-family: 'Courier New', Courier, monospace;
+}
+SEMESTER
+{
+ display: block;
+ color: #33cc92;
+ margin-left: 20pt;
+ font-size: 20px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+UNIVERSITY
+{
+ display: block;
+ color: #ffffff;
+ margin-left: 20pt;
+ font-size: 20px;
+
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+COUNTRY
+{
+ display: block;
+ color: #000000;
+ margin-left: 20pt;
+ font-style: italic;
+ font-size: 20px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
